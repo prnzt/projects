@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#359693</color>
+    <color name="colorPrimaryDark">#359693</color>
+    <color name="colorAccent">#359693</color>
+    <color name="colorAccentPressed">#890332</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="green">#008001</color>
+    <color name="azulado">#000610</color>
+    <color name="azulBrillante">#010b13</color>
+    <color name="blanco">#f0e7d3</color>
+    <color name="botones">#e3dac9</color>
+    <color name="botonesD">#e0d9cc</color>
+</resources>

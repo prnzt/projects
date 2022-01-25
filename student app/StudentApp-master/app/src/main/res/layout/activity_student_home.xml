@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".TeacherHome">
+
+
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/backgroundimagehomepage" />
+
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/t1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <Button
+
+                    android:id="@+id/button3"
+                    android:layout_width="329dp"
+                    android:layout_height="79dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rectangle8"
+                    android:drawableTop="@drawable/connecttoclassroomimage"
+                    android:onClick="classroom_session"
+                    android:paddingTop="5dp"
+                    android:text="@string/connect_to_classroom_session"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/button4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="329dp"
+                    android:layout_height="79dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rectangle8"
+                    android:drawableTop="@drawable/syncronizeimage"
+                    android:onClick="sync_data"
+                    android:paddingTop="5dp"
+                    android:text="@string/synchonize_data_with_cloud"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/button5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="329dp"
+
+                    android:layout_height="79dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rectangle8"
+                    android:drawableTop="@drawable/curriculumimage"
+                    android:gravity="center"
+                    android:onClick="manage_curriculum"
+                    android:paddingTop="5dp"
+                    android:text="@string/view_curriculum"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/button6"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="329dp"
+                    android:layout_height="79dp"
+
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/rectangle8"
+                    android:drawableTop="@drawable/performanceimage"
+                    android:gravity="center"
+                    android:onClick="student_performance"
+                    android:paddingTop="5dp"
+                    android:text="@string/view_student_s_performance"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="329dp"
+                    android:layout_height="79dp"
+
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/rectangle8"
+                    android:gravity="center"
+                    android:onClick="test_exam"
+                    android:paddingTop="5dp"
+                    android:text="@string/take_test_exam"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/button6" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+</RelativeLayout>
